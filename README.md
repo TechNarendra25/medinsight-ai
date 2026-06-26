@@ -1,223 +1,282 @@
-﻿# medinsight-ai
-
 # 💊 MedInsight AI — LLM-Powered Medicine Data Analyst
 
-![Python](https://img.shields.io/badge/Python-3.10-blue?style=flat&logo=python)
-![Streamlit](https://img.shields.io/badge/Streamlit-1.x-red?style=flat&logo=streamlit)
-![Groq](https://img.shields.io/badge/Groq-LLaMA3-green?style=flat)
-![License](https://img.shields.io/badge/License-MIT-yellow?style=flat)
-![Status](https://img.shields.io/badge/Status-Live-brightgreen?style=flat)
+<p align="center">
+  <img src="image1.png" width="100%">
+</p>
 
-> An AI-powered web application that allows users to analyze 
-> India's medicine dataset using plain English questions, 
-> powered by Groq LLaMA AI — no SQL or Python knowledge required!
+<p align="center">
+  <strong>Talk to India's Medicine Data using AI</strong>
+</p>
 
-## 🌐 Live Demo
-### 👉 [Click Here to Try the App](https://medinsight-ai-uzdjghs9jtrqsvfsqvfhkv.streamlit.app)
+<p align="center">
+
+![Python](https://img.shields.io/badge/Python-3.10+-blue?style=for-the-badge&logo=python)
+![Streamlit](https://img.shields.io/badge/Streamlit-red?style=for-the-badge&logo=streamlit)
+![Groq](https://img.shields.io/badge/Groq-LLaMA%203.3-green?style=for-the-badge)
+![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Random%20Forest-purple?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
+
+</p>
+
+<p align="center">
+<a href="https://medinsight-ai-uzdjghs9jtrqsvfsqvfhkv.streamlit.app">
+<img src="https://img.shields.io/badge/🚀%20Live%20Demo-Try%20Now-success?style=for-the-badge">
+</a>
+</p>
 
 ---
 
-## 📸 App Preview
+# 📖 Project Description
 
-| Feature | Description |
-|---------|-------------|
+**MedInsight AI** is an AI-powered medicine analytics platform that allows users to interact with medicine datasets using plain English questions.
+
+The application combines:
+
+- 🤖 Large Language Models (Groq LLaMA 3.3)
+- 📊 Automated Data Visualization
+- 🧠 Machine Learning Models
+- 🔍 Medicine Dataset Analysis
+- 💬 Conversational Data Analytics
+
+Users can upload a medicine dataset and instantly receive insights, charts, and answers without writing SQL or Python code.
+
+---
+
+# ✨ Key Features
+
+✅ Upload medicine CSV datasets
+
+✅ Ask questions in plain English
+
+✅ AI-powered answers using Groq LLaMA
+
+✅ Automatic chart generation
+
+✅ Random Forest price prediction model
+
+✅ Data preview dashboard
+
+✅ Export chat history
+
+✅ Session statistics
+
+✅ Professional dark UI
+
+---
+
+# 🚀 Application Modules
+
+| Module | Description |
+|--------|-------------|
+| 📂 Upload Dataset | Upload medicine CSV files |
 | 💬 AI Chat | Ask questions in plain English |
-| 📊 Auto Charts | Automatic chart generation |
-| 🔍 Data Preview | 4-tab data explorer |
+| 📊 Auto Charts | Automatically generated visualizations |
+| 🔍 Data Explorer | Dataset preview and statistics |
+| 📈 ML Prediction | Medicine price prediction |
 | 📥 Export | Download chat history |
-| 🌙 Dark Theme | Professional dark UI |
 
 ---
 
-## ✨ Features
+# 🖼️ Application Preview
 
-- 📂 **Upload any medicine CSV dataset**
-- 💬 **Ask questions in plain English** — no coding needed!
-- 🤖 **AI-powered answers** via Groq LLaMA 3.3
-- 📊 **Auto chart generation** — bar, pie, histogram, box plot, scatter
-- 🧠 **Random Forest ML model** for medicine price prediction
-- 📥 **Export chat history** as text file
-- 🌙 **Dark theme** professional UI
-- 📈 **Session stats** — query counter
-- 🔍 **Data preview** with 4 tabs — rows, stats, missing values, column info
+<p align="center">
+<img src="image1.png" width="100%">
+</p>
 
 ---
 
-## 🛠️ Tech Stack
+# 🏗️ System Architecture
+
+```text
+CSV Dataset
+      ↓
+Pandas Processing
+      ↓
+Groq AI (LLaMA 3.3)
+      ↓
+Natural Language Queries
+      ↓
+Charts & Insights
+      ↓
+Interactive Streamlit Dashboard
+```
+
+---
+
+# 📊 Dataset Information
+
+| Metric | Value |
+|---------|--------|
+| Medicines | 248,218+ |
+| Features | 58 Columns |
+| Companies | 1000+ |
+| Categories | Multiple |
+| Dataset Type | Indian Medicine Data |
+
+---
+
+# 💬 Example Questions
+
+```text
+Which medicine is most expensive?
+Show price distribution by category.
+Which company has most medicines?
+Compare prices across categories.
+What are common side effects?
+Show top 10 medicines by price.
+How many unique companies are there?
+What is the average price of medicines?
+```
+
+---
+
+# 🛠️ Tech Stack
 
 | Technology | Purpose |
-|-----------|---------|
-| 🐍 Python & Pandas | Data processing & analysis |
-| 🤖 Groq API (LLaMA 3.3) | Natural language AI engine |
-| 📊 Plotly | Interactive chart generation |
-| 🧠 Scikit-learn | Random Forest ML model |
-| 🎈 Streamlit | Web app & deployment |
-| 🔐 python-dotenv | API key management |
-| 📦 Joblib & NumPy | ML model utilities |
+|------------|---------|
+| Python | Backend Programming |
+| Pandas | Data Processing |
+| Groq LLaMA 3.3 | AI Engine |
+| Plotly | Interactive Charts |
+| Streamlit | Web Application |
+| Scikit-Learn | Machine Learning |
+| Joblib | Model Serialization |
+| NumPy | Numerical Processing |
 
 ---
 
-## 📁 Project Structure
-```
-medinsight-ai/
-│
-├── app.py                 → Main Streamlit application
-├── gemini_engine.py       → Groq AI query handler
-├── chart_generator.py     → Auto chart generation engine
-├── utils.py               → Helper & utility functions
-├── ml_model.py            → Random Forest ML model
-├── requirements.txt       → Python dependencies
-├── .gitignore             → Git ignore rules
-├── .streamlit/
-│   └── secrets.toml       → API key (not uploaded)
-└── data/
-    └── medicines.csv      → Medicine dataset
-```
-
----
-
-## 💬 Example Questions You Can Ask
-```
-"Which medicine is most expensive?"
-"Show price distribution by category"
-"Which company has most medicines?"
-"Compare prices across categories"
-"What are common side effects?"
-"Show top 10 medicines by price"
-"How many unique companies are there?"
-"What is the average price of medicines?"
-```
-
----
-
-## 🚀 Run Locally
-
-### Prerequisites
-- Python 3.10+
-- Groq API Key (free at https://console.groq.com)
-
-### Steps
-
-**1 — Clone the repository:**
-```bash
-git clone https://github.com/TechNarendra25/medinsight-ai.git
-cd medinsight-ai
-```
-
-**2 — Create virtual environment:**
-```bash
-python -m venv venv
-venv\Scripts\activate  # Windows
-source venv/bin/activate  # Mac/Linux
-```
-
-**3 — Install dependencies:**
-```bash
-pip install -r requirements.txt
-```
-
-**4 — Add your API key:**
-```bash
-# Create .env file and add your Groq API key
-echo "GROQ_API_KEY=your_key_here" > .env
-```
-
-**5 — Run the app:**
-```bash
-streamlit run app.py
-```
-
-**6 — Open browser at:**
-```
-http://localhost:8501
-```
-
----
-
-## 📊 Dataset
-
-This project uses the **India Medicine Dataset** from Kaggle:
-- 📦 **248,218 medicines**
-- 📋 **58 columns** including name, manufacturer, category, price, substitutes, side effects
-- 🏥 Covers major Indian pharmaceutical companies
-
----
-
-## 🧠 ML Model Details
+# 🧠 Machine Learning Model
 
 | Parameter | Value |
 |-----------|-------|
 | Algorithm | Random Forest Regressor |
 | Training Samples | 40,000+ |
-| Features Used | Manufacturer, Category, Composition |
+| Accuracy | 85%+ |
 | Target Variable | Medicine Price |
-| Accuracy | 85%+ (R² Score) |
-| Library | scikit-learn |
+| Library | Scikit-Learn |
 
 ---
 
-## 🔐 Environment Variables
+# 📁 Project Structure
 
-Create a `.env` file in root directory:
-```
-GROQ_API_KEY=your_groq_api_key_here
-```
-
-For Streamlit Cloud deployment, add in **Advanced Settings → Secrets:**
-```toml
-GROQ_API_KEY = "your_groq_api_key_here"
+```text
+medinsight-ai/
+│
+├── app.py
+├── gemini_engine.py
+├── chart_generator.py
+├── utils.py
+├── ml_model.py
+├── requirements.txt
+├── .gitignore
+│
+├── .streamlit/
+│   └── secrets.toml
+│
+├── data/
+│   └── medicines.csv
+│
+└── assets/
+    └── medinsight-banner.png
 ```
 
 ---
 
-## 📦 Requirements
+# 🌐 Live Demo
+
+🚀 https://medinsight-ai-uzdjghs9jtrqsvfsqvfhkv.streamlit.app
+
+---
+
+# 🚀 Run Locally
+
+## Clone Repository
+
+```bash
+git clone https://github.com/TechNarendra25/medinsight-ai.git
+cd medinsight-ai
 ```
+
+## Create Virtual Environment
+
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
+
+## Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+## Add API Key
+
+Create `.env`
+
+```env
+GROQ_API_KEY=your_api_key_here
+```
+
+## Run Application
+
+```bash
+streamlit run app.py
+```
+
+---
+
+# 📦 Requirements
+
+```text
 streamlit
 pandas
 plotly
 python-dotenv
-openpyxl
 groq
 scikit-learn
 joblib
 numpy
+openpyxl
 ```
 
 ---
 
-## 🚀 Deployment
+# 🚀 Future Enhancements
 
-This app is deployed on **Streamlit Cloud** for free:
-
-1. Push code to GitHub
-2. Go to [streamlit.io/cloud](https://streamlit.io/cloud)
-3. Connect GitHub repository
-4. Add `GROQ_API_KEY` in secrets
-5. Deploy! ✅
-
----
-
-## 👨‍💻 Built By
-
-**Narendra Vispute**
-- 📧 vispute.narendra03@gmail.com
-- 💼 [LinkedIn](https://linkedin.com/in/narendra-vispute)
-- 🐙 [GitHub](https://github.com/TechNarendra25)
+- Multi-file dataset support
+- PDF report generation
+- RAG-powered medicine search
+- Drug recommendation engine
+- Azure OpenAI integration
+- Dashboard sharing
+- Voice-based medicine analytics
 
 ---
 
-## 📄 License
+# 👨‍💻 Author
 
-This project is licensed under the MIT License.
+## Narendra Vispute
+
+🚀 Data Analyst | Data Scientist | AI & ML Enthusiast
+
+📧 Email:
+vispute.narendra03@gmail.com
+
+🔗 LinkedIn:
+https://www.linkedin.com/in/narendra-vispute/
+
+💻 GitHub:
+https://github.com/TechNarendra25
 
 ---
 
-## ⭐ Support
+# ⭐ Support
 
-If you found this project helpful, please give it a ⭐ star on GitHub!
-
-It helps others discover this project and motivates further development! 🙏
+If you found this project useful, please give it a ⭐ on GitHub.
 
 ---
 
-*Built with ❤️ using Python, Groq AI, and Streamlit*
+<p align="center">
+Made with ❤️ using Python, Groq AI, Machine Learning & Streamlit
+</p>
